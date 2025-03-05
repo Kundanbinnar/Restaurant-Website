@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Foodweb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+     <div class="container">
+      <nav>
+            <div class="logo">
+                <h1>Food Hub</h1>
+            </div>
+
+            <div class="search">
+                <input type="text" id="input" value="" placeholder="search Here.." onkeyup="myFun()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="icon">
+                <i onclick="login()" class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i onclick="nav()" class="fa-solid fa-bars"></i>
+            </div>
+      </nav>
+      
+        <!-----Login-------->
+
+        <div class="login">
+            <h2>Log In</h2>
+            <input type="text" placeholder="Enter your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <button>Log In</button>
+        </div>
+
+
+        <!-------Nav----->
+
+        <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Food</li>
+            <li>Blogs</li>
+            <li>Review</li>
+        </ol>
+        </div>
+
+
+         <!-- main -->
+
+         <div class="main">
+            <div class="text">
+                <h1>Simple & Tasty Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum soluta incidunt vero laboriosam commodi repudiandae doloremque, veritatis repellat fugit ab.</p>
+                <button class="btn">Explore More</button>
+            </div>
+
+            <img src="Img/img1.png" alt="">
+         </div>
+
+
+         <!-- Card Food-->
+           
+         <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1>Our <span>Foods</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="Img/cimg1.jpg" alt="">
+                            <h2>249 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="card">
+                            <img src="Img/cimg3.jpg" alt="">
+                            <h2>89 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="card">
+                            <img src="Img/cimg7.jpg" alt="">
+                            <h2>109 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                     </div>
+
+                     <div class="crd">
+                        <div class="card">
+                            <img src="img/cimg2.jpg" alt="">
+                            <h2>299 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="card">
+                            <img src="Img/cimg5.jpg" alt="">
+                            <h2>119 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="card">
+                            <img src="Img/cimg4.jpg" alt="">
+                            <h2>249 Rupees Only</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1>Our <span>Blogs</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="blogs">
+                            <img src="Img/bimg1.jpeg" alt="">
+                            <h2>Indian Foods</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate nihil fugiat minus hic architecto.
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="blogs">
+                            <img src="Img/bimg3.jpeg" alt="">
+                            <h2>Variety of Sweets Dishes</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate nihil fugiat minus hic architecto.
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="blogs">
+                            <img src="Img/bimg2.jpg" alt="">
+                            <h2>Healthy Food</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate nihil fugiat minus hic architecto.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+         </table>
+             
+  <!--- Customer Review --->
+
+<div class="head">
+    <h1>Customer <span>Review</span></h1>
+</div>
+  <div class="Review">
+    <div class="customer">
+        <img src="Img/rimg1.jpeg" alt=""><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit velit sapiente culpa dolorum mollitia.</p>
+    </div>
+    <div class="customer">
+        <img src="Img/rimg4.webp" alt=""><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit velit sapiente culpa dolorum mollitia.</p>
+    </div>
+    <div class="customer">
+        <img src="Img/rimg3.jpg" alt=""><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit velit sapiente culpa dolorum mollitia.</p>
+    </div>
+  </div>
+
+
+  <!---footer---->
+
+
+       <div class="footer">
+        <div class="txt">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet  <br> consectetur adipisicing elit. 
+            </p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+        </div>
+
+        <div class="txt">
+            <h2>About Us</h2>
+            <p>Product</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+        </div>
+
+        <div class="txt">
+            <h2>About Us</h2>
+            <p>Near</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+        </div>
+
+        <div class="txt">
+            <h2>About Us</h2>
+            <p>Websites</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+        </div>
+       </div>
+     </div>
+
+
+    <script src="FoodWeb.js"></script>
+</body>
+</html>
